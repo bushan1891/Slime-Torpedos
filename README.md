@@ -15,33 +15,9 @@ intensity is. In other words, the data it provides is the equivalent of a black-
 Second, the data is very noisy – even if there are no targets in a particular area, some pixels
 will be “on”, and if there is a target, some of its pixels will be “off”. For example, here's a 20 x
 20 sample of raw data from the Bliffoscope (where each “+” is a pixel that is on):
-+++ + + +++ +
-+ + + + ++ + + + + + +
-+++ + + +
-+++++ + + ++
-+ ++ + +++ + + ++
-+ ++ + ++ ++
-++++ ++ + + + + +
-+++ +++ ++ ++
-++ + ++ + +
-+ ++ ++ ++ + + + + +++ ++ +
-+ + +++ +
-+ +
-+ + + +
-+
-++ ++ + + +
+
 Below is a sample image of a slime torpedo:
-+
-+
-+++
-+++++++
-++ ++
-++ + ++
-++ +++ ++
-++ + ++
-++ ++
-+++++++
-+++
+
 On the Bliffoscope data, we've highlighted the pixels that should be “on” for a slime torpedo.
 You can see that more of the highlighted pixels are “on” in the highlighted area than in other
 areas of the image. You must use this difference to locate the targets in the Bliffoscope data.
