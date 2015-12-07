@@ -6,7 +6,8 @@ import java.util.*;
 import com.servicenow.model.BliffoscopeData;
 import com.servicenow.model.RejectoSpaceships;
 import com.servicenow.model.SlimeTorpido;
-   
+import com.servicenow.util.*;   
+import com.servicenow.util.DetectPattren;
 public class WarController { 
     public static void main(String[]args) { 
         
@@ -23,11 +24,19 @@ public class WarController {
     	// loading BliffoscopeData 
     	BliffoscopeData bliffoscope = new BliffoscopeData();
     	bliffoscope.setCharFormat("TestData.blf");
-    	bliffoscope.display();
+    	//bliffoscope.display();
     	
     	
     	// Detect Slime-Torpido 
+    	DetectPattren d = new DetectPattren(); 
+    	int i = d.ScanR(slime,bliffoscope);
+    	
+    	// Print out number of Pattren found 
+        System.out.println(i);
     	
     	
-    } 
+    	 
+    }
+
+	
 }

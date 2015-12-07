@@ -4,8 +4,8 @@ import com.servicenow.util.ReadFile;
 
 public class RejectoSpaceships {
 
-    char[][] shape ; 
-    static int len;
+  public  char[][] shape ; 
+  public  static int len;
     
 	public char[][] getCharFormat() {
 		return shape;
